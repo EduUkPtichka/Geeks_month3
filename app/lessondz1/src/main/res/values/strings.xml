@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lessonDz1</string>
+    <string name="press_your_password">Press your password</string>
+    <string name="send">send</string>
+    <string name="email">email</string>
+    <string name="theme">theme</string>
+    <string name="message">message</string>
+</resources>
