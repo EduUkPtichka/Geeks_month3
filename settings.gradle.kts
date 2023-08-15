@@ -16,3 +16,5 @@ dependencyResolutionManagement {
 rootProject.name = "Geeks_ month3"
 include(":app")
 include(":app:lessondz1")
+include(":app:lesson_1")
+include(":app:lesson_2")
