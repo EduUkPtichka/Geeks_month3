@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+
+
     //Имитация
     private void loadData() {
         contactListMain.add("Ашотик");
