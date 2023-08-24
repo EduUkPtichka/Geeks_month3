@@ -23,10 +23,7 @@ public class MainActivity extends AppCompatActivity {
         rvContact.setAdapter(adapter);
 
     }
-
-
-
-
+    
     //Имитация
     private void loadData() {
         contactListMain.add("Ашотик");

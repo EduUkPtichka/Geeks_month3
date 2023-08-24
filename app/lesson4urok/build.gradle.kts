@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.lesson_1"
+    namespace = "com.example.lesson4urok"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.lesson_1"
+        applicationId = "com.example.lesson4urok"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -28,11 +28,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
-    }
-
-    //buildFeatures наш подключатор!
-    buildFeatures{
-        viewBinding = true
     }
 }
 

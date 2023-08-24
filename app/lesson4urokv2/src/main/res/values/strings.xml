@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lesson4urokV2</string>
+    <string name="textview1">textview1</string>
+    <string name="textview2">textview2</string>
+    <string name="textview3">textview3</string>
+    <string name="textview4">textview4</string>
+    <string name="kg">Kg</string>
+    <string name="bishkek">Bishkek</string>
+</resources>
