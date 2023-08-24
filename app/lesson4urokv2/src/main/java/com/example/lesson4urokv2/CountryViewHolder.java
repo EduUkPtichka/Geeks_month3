@@ -27,5 +27,7 @@ public class CountryViewHolder extends RecyclerView.ViewHolder {
         tvCountName.setText(country.getName());
         tvCapital.setText(country.getName());
         Glide.with(imgFlag).load(country.getFlag()).into(imgFlag);
+
+
     }
 }

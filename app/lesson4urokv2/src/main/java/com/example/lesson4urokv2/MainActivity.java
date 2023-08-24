@@ -3,13 +3,14 @@ package com.example.lesson4urokv2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.example.lesson4urokv2.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnItemClick {
 
     //private TextView tvOne, tvTwo, tvThree, tvFoutr;
     private ActivityMainBinding binding; // ActivityMainBinding - имя нашего XML-файла.
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         // initView();
 
         loadData();
-        adapter = new CountryAdapter(countryList);
+        adapter = new CountryAdapter(countryList, this);
         binding.rvCountry.setAdapter(adapter);
     }
 
@@ -48,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
         countryList.add(new CountryModel("Germany", "Berlin", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Flag_of_Germany_%283-2_aspect_ratio%29.svg/250px-Flag_of_Germany_%283-2_aspect_ratio%29.svg.png"));
         countryList.add(new CountryModel("Jordan", "Aman", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/250px-Flag_of_Japan.svg.png"));
 
+    }
+
+    @Override
+    public void onClick(int position) {
+        CountryModel country = countryList.get(position);
+        Log.d("Edu",country.getName());
     }
 
     //    private void initView() {
