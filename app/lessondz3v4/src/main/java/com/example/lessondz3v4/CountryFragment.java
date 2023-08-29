@@ -19,6 +19,8 @@ import java.util.ArrayList;
 
 
 public class CountryFragment extends Fragment {
+
+
     private FragmentCountryBinding binding;
     private ArrayList<Country> countryList;
     private CountryAdapter adapter;
