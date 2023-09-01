@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.lessondz3v5'
+    namespace 'com.example.lesson3v7'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.lessondz3v5"
+        applicationId "com.example.lesson3v7"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -30,12 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    dataBinding {
-        enabled = true
-    }
 }
-
 
 dependencies {
 
@@ -46,6 +41,4 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
-
 }

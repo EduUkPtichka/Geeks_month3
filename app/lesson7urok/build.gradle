@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.lessondz3v5'
+    namespace 'com.example.lesson7urok'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.lessondz3v5"
+        applicationId "com.example.lesson7urok"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -30,12 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    dataBinding {
-        enabled = true
-    }
 }
-
 
 dependencies {
 
@@ -47,5 +42,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-
+    def nav_version = "2.7.1"
+    // Kotlin
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 }

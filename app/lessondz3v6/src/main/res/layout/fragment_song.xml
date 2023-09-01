@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SongFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:src="@drawable/music"
+        android:scaleType="fitXY"
+        android:id="@+id/iv_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="now_playing"
+        android:textColor="@color/white"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="60dp"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:id="@+id/tv_now_playing"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="talk_me_down"
+        android:textColor="@color/white"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="33dp"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:id="@+id/tv_song" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blue_neighbourhood"
+        android:textColor="@color/white"
+        android:layout_marginStart="33dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginTop="310dp"
+        android:id="@+id/tv_group"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="370dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/play_list" />
+
+</FrameLayout>
